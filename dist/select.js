@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.12.1 - 2015-07-28T03:50:59.076Z
+ * Version: 0.12.1 - 2016-08-10T13:11:31.874Z
  * License: MIT
  */
 
@@ -1240,6 +1240,7 @@ uis.directive('uiSelectMultiple', ['uiSelectMinErr','$timeout', function(uiSelec
           }
         }
         $select.selected = ngModel.$viewValue;
+        $selectMultiple.refreshComponent();
         scope.$evalAsync(); //To force $digest
       };
 
